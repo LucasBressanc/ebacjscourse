@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON Adoption Center</title>
+    <link rel="stylesheet" type="text/css" href="stylemenu.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="indexmenu.html">Home</a></li>
+                <li><a href="indexabout.html">About</a></li>
+                <li><a href="indexcontact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Ontario Comunity Adopt Center</h1>
+            <h2>Check our available buddies!</h2>
+        </section>
+        <section class="buddies">
+            <h2>Our buddies</h2>
+            <div class="buddie-grid">
+                <div class="buddie" data-image="animal1.jpg">
+                    <img src="animal1.jpg" alt="Buddy 1">
+                    <h3>Buddy 1</h3>
+                </div>
+                <div class="buddie" data-image="animal2.jpg">
+                    <img src="animal2.jpg" alt="Buddy 2">
+                    <h3>Buddy 2</h3>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cart">
+            <h2>Information</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Breed</th>
+                        <th>Location</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <p>Total contribuition: <span id="total"></span></p>
+            <button id="checkout">Book a meeting</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ontario Adoption Center</p>
+    </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <img id="modal-image" src="" alt="Image large">
+        </div>
+    </div>
+    <script src="scriptmenu.js"></script>
+</body>
+</html>
