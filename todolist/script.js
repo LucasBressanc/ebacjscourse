@@ -1,0 +1,21 @@
+function addTask() {
+  const taskInput = document.getElementById("taskInput");
+  const taskList = document.getElementById("taskList");
+  const taskText = taskInput.value.trim();
+
+  if (taskText !== "") {
+    const li = document.createElement("li");
+    li.textContent = taskText;
+
+    const removeBtn = document.createElement("button");
+    removeBtn.textContent = "Remover";
+    removeBtn.className = "remove-btn";
+    removeBtn.onclick = function () {
+      taskList.removeChild(li);
+    };
+
+    li.appendChild(removeBtn);
+    taskList.appendChild(li);
+    taskInput.value = "";
+  }
+}
